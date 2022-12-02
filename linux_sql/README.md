@@ -1,7 +1,7 @@
 # Linux Cluster Monitoring Agent
 
 ## Introduction
-The Linux Cluster Monitoring Agent is designed to monitor server resource usage (e.g. cpu, memory, disk) in real time. The agent can be installed on each node of the cluster and it will record the hardware specifications and resource usage in a database. The data can be used by cluster administration teams for future resource planning purposes. It is developed using bash, docker, postgres and git.
+The Linux Cluster Monitoring Agent is designed to monitor server resource usage (e.g. CPU, memory, disk) in real-time. The agent can be installed on each node of the cluster and will record the hardware specifications and resource usage in a database. The data can be used by cluster administration teams for future resource planning purposes. It is developed using bash, docker, postgres and git.
 
 ## Quick Start
 - Create a psql instance in docker using psql_docker.sh
@@ -39,7 +39,7 @@ The Linux Cluster Monitoring Agent is designed to monitor server resource usage 
   ```
 
 ## Implementation
-The monitoring agent is built using two bash scripts, `host_info.sh` and `host_usage.sh` for collecting and storing data. Each node on the cluster will have the monitoring agent. A PostgreSQL database is used to manage the data and is provisioned using a Docker container. It is hosted on one of the nodes in the cluster. A docker volume is to be created to persist the data.   
+The monitoring agent is built using two bash scripts, `host_info.sh` and `host_usage.sh` for collecting and storing data. Each node on the cluster will have a monitoring agent. A PostgreSQL database is used to manage the data and is provisioned using a Docker container. It is hosted on one of the nodes in the cluster. A docker volume is to be created to persist the data.   
    
 `host_info.sh` is for recording hardware specification data. The script will be run once as hardware specifications are assumed to be static. `host_usage.sh` is for recording resource usage data and is required to be run every minute. The bash job scheduler `crontab` is used to run the script every minute.
 ### Architecture
@@ -49,7 +49,7 @@ The monitoring agent is built using two bash scripts, `host_info.sh` and `host_u
 
 ### Scripts
 - psql_docker.sh   
-Provisions a PostgreSQL instance using docker container and can start or stop the container. `[db_username]` and `[db_password]` are required when using create.
+Provisions a PostgreSQL instance using a docker container and can start or stop the container. `[db_username]` and `[db_password]` are required when using create.
   ``` 
   ./scripts/psql_docker.sh start|stop|create [db_username] [db_password]
   ```
