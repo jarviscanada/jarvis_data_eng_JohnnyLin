@@ -7,6 +7,7 @@ END;
 $$
     LANGUAGE PLPGSQL;
 
+
 -- 1. Group hosts by hardware info
 SELECT
     cpu_number,
@@ -21,7 +22,7 @@ SELECT
     host_usage.host_id,
     host_info.hostname,
     round5(host_usage.timestamp) AS timestamp,
-    ROUND(AVG(((host_info.total_mem - host_usage.memory_free)/host_info.total_mem)*100),0) AS avg_used_mem_percentage
+    ROUND(AVG(((host_info.total_mem-(host_usage.memory_free*1000))::numeric/host_info.total_mem)*100),2) AS avg_used_mem_percentage
 FROM host_usage
 INNER JOIN host_info ON host_usage.host_id = host_info.id
 GROUP BY host_usage.host_id, host_info.hostname, round5(host_usage.timestamp)
