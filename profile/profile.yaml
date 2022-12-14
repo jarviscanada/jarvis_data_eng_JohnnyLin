@@ -1,11 +1,11 @@
 # Preferred name (Characters only)
 name: "Johnny Lin"
 # Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_demo
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+summary: I am a recent graduate of the Computer Programming program from Seneca College and also an Electrical Engineering graduate from Ryerson University. Through my studies, I have gained knowledge in system design, data structures, algorithms, database systems, web development, networking and various programming languages. My career aspiration is to make an impact as a Software Engineer. Growing up, I was always interested in understanding how things worked which has led me to continuously explore and learn new things. As a competitor, I enjoy taking on new challenges and being able to find creative solutions to problems. Currently at Jarvis Consulting Group, I have been able to further develop my technical and soft skills through projects in a team-oriented environment. Altogether, I am excited to utilize my knowledge and abilities to create an impact in the software industry.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -17,20 +17,21 @@ skills:
     - RDBMS/SQL
     - Agile/Scrum
     - Git
+    - Data Structures
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - Node.js
+    - Express.js
+    - Docker
+    - Maven
+    - C++
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
+    - Cloud/AWS
+    - HTML/CSS
+    - Bootstrap
+    - JUnit
+    - Python
 
 # List of Jarvis projects
 jarvis_projects:
@@ -38,13 +39,13 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    description: Implemented a Linux Cluster Monitoring Agent using Bash scripts that manages and stores hardware specifications and resource usage data of nodes in a cluster. The agent utilizes the crontab scheduler to execute every minute. The data is managed by a PostgreSQL database that is provisioned using Docker.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "Twitter App: Not Started"
+      - "JDBC App: Not Started"
+      - "Grep App: In progress"
   - name: "Springboot App"
     git_url: "/springboot"
     description: ""
@@ -65,14 +66,17 @@ jarvis_projects:
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: "Web app for resturant"
+  - name: "Vacation Destination Web App"
     #URL is optional
-    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Machine Learning"
     git_url:
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Designed a web application for browsing vacation destination properties. Travelers can view details of the property and have the option of filtering based on property type and location. Implemented using MongoDB, Express, Handlebars and Node.
+  - name: "General Hospital Pre-Triage App"
+    git_url:
+    description: Developed an app in C++ for hospitals to screen and admit patients according to those that require general care and COVID-19 testing. Provides estimated wait times to prevent lineups and the spread of COVID-19.
+  - name: "360-Degree Image Stitching Module"
+    git_url:
+    description: Collaborated with a team of three to design a module that captures images in a 360-degree range to create a panoramic image. Implemented controller theory in Python and image processing techniques in C++.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -81,43 +85,41 @@ professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
   - title: "Software Developer"
     company: "Jarvis"
-    duration: "2020-present"
+    duration: "2022-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-  - title: "Tutor"
-    company: "XYZ Company"
-    duration: "2019"
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+    description: "Worked with a team of software developers to implement projects in an agile/scrum environment. Designed, implemented and tested various projects using technologies such as Java, SQL, Linux/Bash, Maven, Docker and Git. Conducted daily scrum meetings as the team lead to provide updates to the project manager and resolve impediments within the team."
+  - title: "Senior Technical Student"
+    company: "Toronto Hydro Corporation"
+    duration: "2021"
+    description: "Executed test cases for regression testing of a web application in an agile/scrum environment. Created test scripts based on user stories to automate testing using Katalon. Utilized Jira to track progress on the workflow. Participated in daily scrum meetings and monthly sprints."
+  - title: "Fulfillment Associate"
+    company: "Amazon Canada Fulfillment Services"
+    duration: "2020-2022"
+    description: "Performed production duties with a team of 30 people demonstrating excellent communication skills. Mentored new hires on company culture and processes. Demonstrated leadership and problem-solving skills to resolve any issues that arise."
 
 #List of edcuation
 education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
-    department: "Electrical and Computer Engineering"
+  - school_name: "Seneca College"
+    duration: "2020-2022"
+    degree: "Ontario College Diploma"
+    department: "Computer Programming"
     # optional
+    awards_achievements:
+      - "President's Honour List (2021)"
+  - school_name: "Ryerson University"
+    duration: "2014-2019"
+    degree: "Bachelor of Engineering"
+    department: "Electrical Engineering"
     awards_achievements: 
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
-    awards_achievements: 
+      - "Dean's List (2019)"
+      - "Men's Varsity Volleyball Team (2016-2017)"
 
 #Optional section
 others:
     #category
-  - title: "Certificates"
+  - title: "Activities/Hobbies"
     #list of items
     bullets:
-      - "Udacity Machine Learning (2019)"
-  - title: "Awards"
-    bullets:
-      - "Winner"
-  - title: "Activities/Hobbies"
-    bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Fitness"
+      - "Sports (Basketball, Volleyball, Golf)"
+      - "Video Games"

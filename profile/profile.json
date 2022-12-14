@@ -2,47 +2,53 @@
   "education": [
     {
       "awards_achievements": [
-        "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
-        "GPA: 3.8/4.0"
+        "President's Honour List (2021)"
       ],
-      "degree": "Bachelor of Applied Sciences",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2012-2016",
-      "school_name": "XYZ university"
+      "degree": "Ontario College Diploma",
+      "department": "Computer Programming",
+      "duration": "2020-2022",
+      "school_name": "Seneca College"
     },
     {
-      "awards_achievements": null,
-      "degree": "Master of Engineering",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2016-2018",
-      "school_name": "XYZ university"
+      "awards_achievements": [
+        "Dean's List (2019)",
+        "Men's Varsity Volleyball Team (2016-2017)"
+      ],
+      "degree": "Bachelor of Engineering",
+      "department": "Electrical Engineering",
+      "duration": "2014-2019",
+      "school_name": "Ryerson University"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_demo",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
+      "description": "Designed a web application for browsing vacation destination properties. Travelers can view details of the property and have the option of filtering based on property type and location. Implemented using MongoDB, Express, Handlebars and Node.",
+      "git_url": null,
+      "name": "Vacation Destination Web App"
     },
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Developed an app in C++ for hospitals to screen and admit patients according to those that require general care and COVID-19 testing. Provides estimated wait times to prevent lineups and the spread of COVID-19.",
       "git_url": null,
-      "name": "Machine Learning"
+      "name": "General Hospital Pre-Triage App"
+    },
+    {
+      "description": "Collaborated with a team of three to design a module that captures images in a 360-degree range to create a panoramic image. Implemented controller theory in Python and image processing techniques in C++.",
+      "git_url": null,
+      "name": "360-Degree Image Stitching Module"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Implemented a Linux Cluster Monitoring Agent using Bash scripts that manages and stores hardware specifications and resource usage data of nodes in a cluster. The agent utilizes the crontab scheduler to execute every minute. The data is managed by a PostgreSQL database that is provisioned using Docker.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
       "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+        "Twitter App: Not Started",
+        "JDBC App: Not Started",
+        "Grep App: In progress"
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
@@ -77,21 +83,9 @@
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
-      ],
-      "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Winner"
-      ],
-      "title": "Awards"
-    },
-    {
-      "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Fitness",
+        "Sports (Basketball, Volleyball, Golf)",
+        "Video Games"
       ],
       "title": "Activities/Hobbies"
     }
@@ -99,39 +93,46 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2020-present",
+      "description": "Worked with a team of software developers to implement projects in an agile/scrum environment. Designed, implemented and tested various projects using technologies such as Java, SQL, Linux/Bash, Maven, Docker and Git. Conducted daily scrum meetings as the team lead to provide updates to the project manager and resolve impediments within the team.",
+      "duration": "2022-present",
       "title": "Software Developer"
     },
     {
-      "company": "XYZ Company",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2019",
-      "title": "Tutor"
+      "company": "Toronto Hydro Corporation",
+      "description": "Executed test cases for regression testing of a web application in an agile/scrum environment. Created test scripts based on user stories to automate testing using Katalon. Utilized Jira to track progress on the workflow. Participated in daily scrum meetings and monthly sprints.",
+      "duration": "2021",
+      "title": "Senior Technical Student"
+    },
+    {
+      "company": "Amazon Canada Fulfillment Services",
+      "description": "Performed production duties with a team of 30 people demonstrating excellent communication skills. Mentored new hires on company culture and processes. Demonstrated leadership and problem-solving skills to resolve any issues that arise.",
+      "duration": "2020-2022",
+      "title": "Fulfillment Associate"
     }
   ],
   "skills": {
     "competent": [
-      "Donec",
-      "fermentum",
-      "Donec",
-      "fermentum",
-      "Donec"
+      "Node.js",
+      "Express.js",
+      "Docker",
+      "Maven",
+      "C++"
     ],
     "familiar": [
-      "Donec",
-      "fermentum",
-      "fermentum",
-      "fermentum",
-      "fermentum"
+      "Cloud/AWS",
+      "HTML/CSS",
+      "Bootstrap",
+      "JUnit",
+      "Python"
     ],
     "proficient": [
       "Java",
       "Linux/Bash",
       "RDBMS/SQL",
       "Agile/Scrum",
-      "Git"
+      "Git",
+      "Data Structures"
     ]
   },
-  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit."
+  "summary": "I am a recent graduate of the Computer Programming program from Seneca College and also an Electrical Engineering graduate from Ryerson University. Through my studies, I have gained knowledge in system design, data structures, algorithms, database systems, web development, networking and various programming languages. My career aspiration is to make an impact as a Software Engineer. Growing up, I was always interested in understanding how things worked which has led me to continuously explore and learn new things. As a competitor, I enjoy taking on new challenges and being able to find creative solutions to problems. Currently at Jarvis Consulting Group, I have been able to further develop my technical and soft skills through projects in a team-oriented environment. Altogether, I am excited to utilize my knowledge and abilities to create an impact in the software industry."
 }
