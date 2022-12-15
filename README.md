@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin]
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/core_java)]:
       
+  - Grep App: Developed a Grep application that imitates the grep command on Linux. The app searches files for lines matching the provided regular expression and stores the matched lines in a file. The search begins at the specified directory and recursively searches all directories and files.
+  - JDBC App: In progress
   - Twitter App: Not Started
-  - JDBC App: Not Started
-  - Grep App: In progress
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/springboot)]: Not Started
 
