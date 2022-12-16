@@ -46,16 +46,11 @@ public class JavaGrepImp implements JavaGrep{
     List<String> matchedLines = new ArrayList<String>();
 
     List<File> files = listFiles(rootPath);
-    for (int i = 0; i < files.size(); i++) {
-      if (files.get(i).isDirectory()) {
-        List<File> recurseFiles = listFiles(files.get(i).getAbsolutePath());
-        files.addAll(recurseFiles);
-      } else {
-        List<String> lines = readLines(files.get(i));
-        for (String line : lines) {
-          if (containsPattern(line)) {
-            matchedLines.add(line);
-          }
+    for (File file : files) {
+      List<String> lines = readLines(file);
+      for (String line : lines) {
+        if (containsPattern(line)) {
+          matchedLines.add(line);
         }
       }
     }
@@ -67,7 +62,16 @@ public class JavaGrepImp implements JavaGrep{
   public List<File> listFiles(String rootDir) {
     File root = new File(rootDir);
     List<File> files = new ArrayList<File>();
-    files.addAll(Arrays.asList(root.listFiles()));
+    File[] rootFilesList = root.listFiles();
+    if (rootFilesList != null) {
+      for (File file : rootFilesList) {
+        if (file.isFile()) {
+          files.add(file);
+        } else if (file.isDirectory()) {
+          files.addAll(listFiles(file.getAbsolutePath()));
+        }
+      }
+    }
     return files;
   }
 

@@ -40,7 +40,13 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
   @Override
   public List<File> listFiles(String rootDir) {
     File root = new File(rootDir);
-    return Arrays.stream(root.listFiles()).collect(Collectors.toList());
+    List<File> files = new ArrayList<File>();
+    File[] rootFilesList = root.listFiles();
+    if (rootFilesList != null) {
+      files.addAll(Arrays.stream(rootFilesList).filter(file -> file.isFile()).collect(Collectors.toList()));
+      Arrays.stream(rootFilesList).filter(file -> file.isDirectory()).forEach(file -> files.addAll(listFiles(file.getAbsolutePath())));
+    }
+    return files;
   }
 
   @Override
