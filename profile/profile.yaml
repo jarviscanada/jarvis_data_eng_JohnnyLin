@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a recent graduate of the Computer Programming program from Seneca College and also an Electrical Engineering graduate from Ryerson University. Through my studies, I have gained knowledge in system design, data structures, algorithms, database systems, web development, networking and various programming languages. My career aspiration is to make an impact as a Software Engineer. Growing up, I was always interested in understanding how things worked which has led me to continuously explore and learn new things. As a competitor, I enjoy taking on new challenges and being able to find creative solutions to problems. Currently at Jarvis Consulting Group, I have been able to further develop my technical and soft skills through projects in a team-oriented environment. Altogether, I am excited to utilize my knowledge and abilities to create an impact in the software industry.
+summary: I am a recent graduate of the Computer Programming program from Seneca College and also an Electrical Engineering graduate from Ryerson University. Through my studies, I have gained knowledge in system design, data structures, algorithms, database systems, web development, networking and various programming languages. My career aspiration is to make an impact as a Software Engineer. Growing up, I was always interested in understanding how things worked which has led me to continuously explore and learn new things. I enjoy taking on new challenges and being able to find creative solutions to problems. Currently at Jarvis Consulting Group, I have been able to further develop my technical and soft skills through projects in a team-oriented environment. Altogether, I am excited to utilize my knowledge and abilities to create an impact in the software industry.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -22,16 +22,19 @@ skills:
   competent:
     - Node.js
     - Express.js
+    - Postgres
     - Docker
     - Maven
     - C++
   # At least 5 skills
   familiar:
     - Cloud/AWS
+    - Javascript
     - HTML/CSS
     - Bootstrap
     - JUnit
     - Python
+    - MongoDB
 
 # List of Jarvis projects
 jarvis_projects:
@@ -43,24 +46,24 @@ jarvis_projects:
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Grep App: Developed a Grep application that imitates the grep command on Linux. The app searches files for lines matching the provided regular expression and stores the matched lines in a file. The search begins at the specified directory and recursively searches all directories and files."
+      - "Grep App: Developed a Grep application that imitates the grep command on Linux. The app searches files for lines matching the provided regular expression and stores the matched lines in a file. The search begins at the specified directory and recursively searches all directories and files. Implemented using IntelliJ IDE, Core Java and Maven. Deployed with Docker."
       - "JDBC App: In progress"
-      - "Twitter App: Not Started"
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
-  - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
+#      - "Twitter App: Not Started"
+#  - name: "Springboot App"
+#    git_url: "/springboot"
+#    description: ""
+#  - name: "Python Data Analytics"
+#    git_url: "/python_data_anlytics"
+#    description: ""
+#  - name: "Hadoop"
+#    git_url: "/hadoop"
+#    description: ""
+#  - name: "Spark"
+#    git_url: "/spark"
+#    description: ""
+#  - name: "Cloud/DevOps"
+#    git_url: "/cloud_devops"
+#    description: ""
 
 # List of personal or academic projects
 # Feel free to add more projects

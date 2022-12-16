@@ -1,14 +1,14 @@
 # Johnny Lin . Jarvis Consulting
 
-I am a recent graduate of the Computer Programming program from Seneca College and also an Electrical Engineering graduate from Ryerson University. Through my studies, I have gained knowledge in system design, data structures, algorithms, database systems, web development, networking and various programming languages. My career aspiration is to make an impact as a Software Engineer. Growing up, I was always interested in understanding how things worked which has led me to continuously explore and learn new things. As a competitor, I enjoy taking on new challenges and being able to find creative solutions to problems. Currently at Jarvis Consulting Group, I have been able to further develop my technical and soft skills through projects in a team-oriented environment. Altogether, I am excited to utilize my knowledge and abilities to create an impact in the software industry.
+I am a recent graduate of the Computer Programming program from Seneca College and also an Electrical Engineering graduate from Ryerson University. Through my studies, I have gained knowledge in system design, data structures, algorithms, database systems, web development, networking and various programming languages. My career aspiration is to make an impact as a Software Engineer. Growing up, I was always interested in understanding how things worked which has led me to continuously explore and learn new things. I enjoy taking on new challenges and being able to find creative solutions to problems. Currently at Jarvis Consulting Group, I have been able to further develop my technical and soft skills through projects in a team-oriented environment. Altogether, I am excited to utilize my knowledge and abilities to create an impact in the software industry.
 
 ## Skills
 
 **Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, Data Structures
 
-**Competent:** Node.js, Express.js, Docker, Maven, C++
+**Competent:** Node.js, Express.js, Postgres, Docker, Maven, C++
 
-**Familiar:** Cloud/AWS, HTML/CSS, Bootstrap, JUnit, Python
+**Familiar:** Cloud/AWS, Javascript, HTML/CSS, Bootstrap, JUnit, Python, MongoDB
 
 ## Jarvis Projects
 
@@ -19,19 +19,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin]
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/core_java)]:
       
-  - Grep App: Developed a Grep application that imitates the grep command on Linux. The app searches files for lines matching the provided regular expression and stores the matched lines in a file. The search begins at the specified directory and recursively searches all directories and files.
+  - Grep App: Developed a Grep application that imitates the grep command on Linux. The app searches files for lines matching the provided regular expression and stores the matched lines in a file. The search begins at the specified directory and recursively searches all directories and files. Implemented using IntelliJ IDE, Core Java and Maven. Deployed with Docker.
   - JDBC App: In progress
-  - Twitter App: Not Started
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_JohnnyLin/tree/master/cloud_devops)]: Not Started
 
 
 ## Highlighted Projects
