@@ -9,6 +9,7 @@ console.log('analyzeContent("<html><div></div><div></div></html>")');
 console.log(analyzeContent("<html><div></div><div></div></html>"));
 
 
+// analyze content and extract information about content
 function analyzeContent(content) {
     const contentInfo = {};
     
@@ -27,16 +28,19 @@ function analyzeContent(content) {
 }
 
 
+// check if string is HTML
 function isHTML(content) {
     return content.match(/<[^\/].*?>/);
 }
 
 
+// check if string is CSS
 function isCSS(content) {
     return content.match(/.+{.*}/);
 }
 
 
+// extract HTML tags from HTML string
 function extractTags(html) {
     const tags = {};
     const matchedTags = html.matchAll(/<([^\/].*?)>/g);
@@ -51,6 +55,7 @@ function extractTags(html) {
 }
 
 
+// extract CSS targets from CSS string
 function extractTargets(css) {
     const targets = {};
     const matchedTargets = css.trim().matchAll(/(.+?){.*?}\s*/g);
@@ -65,6 +70,7 @@ function extractTargets(css) {
 }
 
 
+// extract line numbers from text
 function extractLines(txt) {
     return txt.split('\n').length;
 }
