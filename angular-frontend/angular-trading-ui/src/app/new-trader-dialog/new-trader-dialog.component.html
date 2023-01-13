@@ -1,0 +1,36 @@
+<h1 mat-dialog-title> Add New Trader</h1>
+<div mat-dialog-content>
+    <form class="new-trader-form" #traderForm="ngForm">
+        <mat-form-field class="trader-field">
+            <mat-label>First Name</mat-label>
+            <input matInput [(ngModel)]="trader.firstName" name="firstName" required>
+        </mat-form-field>
+        <mat-form-field class="trader-field">
+            <mat-label>Last Name</mat-label>
+            <input matInput [(ngModel)]="trader.lastName" name="lastName" required>
+        </mat-form-field>
+        <mat-form-field class="trader-field">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="trader.email" name="email" placeholder="example@domain.com" required>
+        </mat-form-field>
+        <mat-form-field class="trader-field">
+            <mat-label>Country</mat-label>
+            <input matInput [(ngModel)]="trader.country" name="country" placeholder="Ex. Canada" required>
+        </mat-form-field>
+        <mat-form-field class="trader-field">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="trader.dob" name="dateOfBirth" required>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions class="trader-actions">
+    <button mat-stroked-button (click)="closeDialog()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="formatDob()" [mat-dialog-close]="trader" [disabled]="!traderForm.form.valid">
+        Submit
+    </button>
+</div>
+
+
