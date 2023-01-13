@@ -1,9 +1,13 @@
-<h1 mat-dialog-title> Add New Trader</h1>
+<h1 mat-dialog-title id="header"> Add New Trader</h1>
+<button mat-icon-button id="close-button" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+</button>
+<mat-divider></mat-divider>
 <div mat-dialog-content>
     <form class="new-trader-form" #traderForm="ngForm">
         <mat-form-field class="trader-field">
             <mat-label>First Name</mat-label>
-            <input matInput [(ngModel)]="trader.firstName" name="firstName" required>
+            <input matInput [(ngModel)]="trader.firstName" name="firstName" cdkFocusInitial required>
         </mat-form-field>
         <mat-form-field class="trader-field">
             <mat-label>Last Name</mat-label>
@@ -27,7 +31,7 @@
     </form>
 </div>
 <div mat-dialog-actions class="trader-actions">
-    <button mat-stroked-button (click)="closeDialog()">Cancel</button>
+    <button mat-stroked-button mat-dialog-close>Cancel</button>
     <button mat-raised-button color="primary" (click)="formatDob()" [mat-dialog-close]="trader" [disabled]="!traderForm.form.valid">
         Submit
     </button>

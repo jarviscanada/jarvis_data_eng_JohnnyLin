@@ -1,3 +1,14 @@
+#header {
+  display: inline-block;
+  width: 90%;
+  font-size: 25px;
+  height: 45px;
+}
+
+#close-button {
+  display: inline;
+}
+
 .new-trader-form {
   min-width: 150px;
   max-width: 500px;

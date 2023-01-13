@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
 
 import { Trader } from '../trader';
 
@@ -22,13 +21,9 @@ export class NewTraderDialogComponent {
     actions: `<button (click)="deleteTrader">Delete Trader</button>`,
   }
 
-  constructor( public dialogRef: MatDialogRef<NewTraderDialogComponent> ){ }
+  constructor(){ }
 
   formatDob(): void {
     this.trader.dob = new Date(Date.parse(this.trader.dob)).toLocaleDateString();
-  }
-
-  closeDialog(): void {
-    this.dialogRef.close();
   }
 }

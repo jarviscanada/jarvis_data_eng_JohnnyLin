@@ -18,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TraderListComponent } from './trader-list/trader-list.component';
 import { NewTraderDialogComponent } from './new-trader-dialog/new-trader-dialog.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { NewTraderDialogComponent } from './new-trader-dialog/new-trader-dialog.
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
