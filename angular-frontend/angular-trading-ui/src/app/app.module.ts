@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,8 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TraderListComponent } from './trader-list/trader-list.component';
 import { NewTraderDialogComponent } from './new-trader-dialog/new-trader-dialog.component';
-import { MatDividerModule } from '@angular/material/divider';
-
+import { QuotesComponent } from './quotes/quotes.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { MatDividerModule } from '@angular/material/divider';
     DashboardComponent,
     NavbarComponent,
     TraderListComponent,
-    NewTraderDialogComponent
+    NewTraderDialogComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
