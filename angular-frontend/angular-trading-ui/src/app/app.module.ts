@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,7 +44,8 @@ import { QuotesComponent } from './quotes/quotes.component';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
