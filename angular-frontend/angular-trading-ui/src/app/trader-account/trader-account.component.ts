@@ -15,6 +15,8 @@ import { WithdrawFundDialogComponent } from '../withdraw-fund-dialog/withdraw-fu
 export class TraderAccountComponent implements OnInit {
 
   trader: Trader = {} as Trader;
+  editModel: { firstName: string; lastName: string; email: string } = {firstName: '', lastName: '', email: ''};
+  editMode: boolean = false;
 
   constructor( 
     private traderListService: TraderListService,
@@ -23,11 +25,18 @@ export class TraderAccountComponent implements OnInit {
 
   ngOnInit(): void {
     this.getTrader();
+    this.setEditModel();
   }
 
   getTrader(): void {
     const id: number = Number(this.route.snapshot.paramMap.get('id'));
     this.traderListService.getTrader(id).subscribe(trader => this.trader = trader);
+  }
+
+  setEditModel(): void {
+    this.editModel.firstName = this.trader.firstName;
+    this.editModel.lastName = this.trader.lastName;
+    this.editModel.email = this.trader.email;
   }
 
   openDepositDialog(): void {
@@ -54,5 +63,17 @@ export class TraderAccountComponent implements OnInit {
 
   withdrawFunds(amount: number): void {
     this.traderListService.withdrawAmount(this.trader.id, amount);
+  }
+
+  toggleEdit(): void {
+    this.editMode = !this.editMode;
+    if (this.editMode) {
+      this.setEditModel();
+    }
+  }
+
+  onEditSubmit(): void {
+    this.traderListService.editTrader(this.trader.id, this.editModel.firstName, this.editModel.lastName, this.editModel.email);
+    this.toggleEdit();
   }
 }

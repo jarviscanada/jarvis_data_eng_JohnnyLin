@@ -61,4 +61,10 @@ export class TraderListService {
     this.traderList[index].amount = newAmount >= 0 ? newAmount : 0;
   }
 
+  editTrader(id: number, firstName: string, lastName: string, email: string) {
+    const index = this.traderList.findIndex((trader) => trader.id === id);
+    this.traderList[index].firstName = firstName;
+    this.traderList[index].lastName = lastName;
+    this.traderList[index].email = email;
+  }
 }

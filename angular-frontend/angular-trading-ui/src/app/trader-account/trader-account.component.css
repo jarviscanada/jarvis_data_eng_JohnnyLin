@@ -1,3 +1,8 @@
+.trader-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .trader-name{
     display: flex;
 }
@@ -17,4 +22,27 @@
 #trader-amount {
     width: 180px;
     text-align: right;
+}
+
+.edit-profile-form {
+    width: 350px;
+}
+
+.edit-form-field {
+    width: 100%;
+}
+
+.edit-profile-buttons {
+    width: 350px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-profile-buttons button {
+    margin: 0px 5px;
+}
+
+.edit-on {
+    color: white;
+    background-color: rgb(63, 81, 181);
 }
