@@ -50,33 +50,5 @@
 </div>
 <div [hidden]="!editMode">
     <br>
-    <h3>Edit Profile</h3>
-    <form class="edit-profile-form" (ngSubmit)="onEditSubmit()" #editProfileForm="ngForm">
-        <p>
-            <mat-form-field class="edit-form-field">
-                <mat-label>First Name</mat-label>
-                <input matInput [(ngModel)]="editModel.firstName" name="firstName" required>
-            </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field class="edit-form-field">
-                <mat-label>Last Name</mat-label>
-                <input matInput [(ngModel)]="editModel.lastName" name="lastName" required>
-            </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field class="edit-form-field">
-                <mat-label>Email</mat-label>
-                <input matInput [(ngModel)]="editModel.email" name="email" required>
-            </mat-form-field>
-        </p>
-        <div class="edit-profile-buttons">
-            <button mat-stroked-button type="button" (click)="toggleEdit()">
-                Cancel
-            </button>
-            <button mat-raised-button color="primary" type="submit" [disabled]="!editProfileForm.form.valid">
-                Submit
-            </button>
-        </div>
-    </form>
+    <app-edit-trader [trader]="trader" [editModel]="editModel" (toggleEdit)="onToggleEdit()"></app-edit-trader>
 </div>

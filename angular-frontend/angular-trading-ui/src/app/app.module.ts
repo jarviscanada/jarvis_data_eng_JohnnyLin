@@ -25,6 +25,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { TraderAccountComponent } from './trader-account/trader-account.component';
 import { DepositFundDialogComponent } from './deposit-fund-dialog/deposit-fund-dialog.component';
 import { WithdrawFundDialogComponent } from './withdraw-fund-dialog/withdraw-fund-dialog.component';
+import { EditTraderComponent } from './edit-trader/edit-trader.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { WithdrawFundDialogComponent } from './withdraw-fund-dialog/withdraw-fun
     QuotesComponent,
     TraderAccountComponent,
     DepositFundDialogComponent,
-    WithdrawFundDialogComponent
+    WithdrawFundDialogComponent,
+    EditTraderComponent
   ],
   imports: [
     BrowserModule,

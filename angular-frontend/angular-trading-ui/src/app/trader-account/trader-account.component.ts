@@ -15,7 +15,7 @@ import { WithdrawFundDialogComponent } from '../withdraw-fund-dialog/withdraw-fu
 export class TraderAccountComponent implements OnInit {
 
   trader: Trader = {} as Trader;
-  editModel: { firstName: string; lastName: string; email: string } = {firstName: '', lastName: '', email: ''};
+  editModel: { firstName: string; lastName: string; email: string } = { firstName: '', lastName: '', email: ''};
   editMode: boolean = false;
 
   constructor( 
@@ -72,8 +72,7 @@ export class TraderAccountComponent implements OnInit {
     }
   }
 
-  onEditSubmit(): void {
-    this.traderListService.editTrader(this.trader.id, this.editModel.firstName, this.editModel.lastName, this.editModel.email);
+  onToggleEdit(): void { 
     this.toggleEdit();
   }
 }
