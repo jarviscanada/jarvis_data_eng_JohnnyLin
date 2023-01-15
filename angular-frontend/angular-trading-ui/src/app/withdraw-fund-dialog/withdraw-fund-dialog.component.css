@@ -1,0 +1,25 @@
+#header {
+    display: inline-block;
+    width: 70%;
+}
+  
+.close-button-container {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+.withdraw-form {
+    min-width: 250px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.withdraw-field {
+    width: 100%;
+}
+
+.withdraw-actions {
+    display: flex;
+    justify-content: flex-end;
+} 

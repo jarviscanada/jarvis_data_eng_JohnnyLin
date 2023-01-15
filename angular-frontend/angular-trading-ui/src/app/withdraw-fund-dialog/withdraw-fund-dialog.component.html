@@ -1,0 +1,18 @@
+<h1 mat-dialog-title id="header">Withdraw Funds</h1>
+<div class="close-button-container">
+    <button mat-icon-button id="close-button" mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+    <form class="withdraw-form" #withdrawForm="ngForm">
+        <mat-form-field class="withdraw-field">
+            <input matInput [(ngModel)]="amount" name="amount" min="0" step="100" type="number" placeholder="Funds" cdkFocusInitial required>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions class="withdraw-actions">
+    <button mat-stroked-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="amount" [disabled]="!withdrawForm.form.valid">Submit</button>
+</div>

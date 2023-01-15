@@ -1,0 +1,43 @@
+<h1>Trader Account</h1>
+<br>
+<div class="trader-name">
+    <mat-icon id="trader-name-icon">account_circle</mat-icon>
+    <h2> {{ trader.firstName }} {{ trader.lastName }}</h2>
+</div>
+<mat-tab-group animationDuration="0ms">
+    <mat-tab label="Balance">
+        <br>
+        <div class="trader-fund-container">
+            <h3>Funds Available: </h3>
+            <p id="trader-amount">$ {{ trader.amount }}</p>
+        </div>
+        <div class="fund-button-container">
+            <button mat-raised-button color="primary" (click)="openDepositDialog()">Deposit Funds</button>
+            <button mat-raised-button color="primary" (click)="openWithdrawDialog()" [disabled]="trader.amount === 0">Withdraw Funds</button>
+        </div>
+    </mat-tab>
+    <mat-tab label="Account Details">
+        <mat-list>
+            <mat-list-item>
+                <span matListItemTitle>{{ trader.firstName }}</span>
+                <span matListItemLine>First Name</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>{{ trader.lastName }}</span>
+                <span matListItemLine>Last Name</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>{{ trader.email }}</span>
+                <span matListItemLine>Email</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>{{ trader.dob }}</span>
+                <span matListItemLine>Date of Birth</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>{{ trader.country }}</span>
+                <span matListItemLine>Country</span>
+            </mat-list-item>
+        </mat-list>
+    </mat-tab>
+</mat-tab-group>

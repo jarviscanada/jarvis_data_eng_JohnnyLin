@@ -1,0 +1,20 @@
+.trader-name{
+    display: flex;
+}
+
+#trader-name-icon {
+    width: 30px;
+}
+
+.trader-fund-container h3, .trader-fund-container p {
+    display: inline-block;
+}
+
+.fund-button-container button {
+    margin: 0px 5px;
+}
+
+#trader-amount {
+    width: 180px;
+    text-align: right;
+}

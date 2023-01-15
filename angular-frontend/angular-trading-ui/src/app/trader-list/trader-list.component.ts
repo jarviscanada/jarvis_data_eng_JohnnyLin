@@ -3,8 +3,8 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { Trader } from '../trader';
 import { TraderListService } from '../trader-list.service';
 import { MatDialog } from '@angular/material/dialog';
-import { NewTraderDialogComponent } from '../new-trader-dialog/new-trader-dialog.component';
 import { MatTable } from '@angular/material/table';
+import { NewTraderDialogComponent } from '../new-trader-dialog/new-trader-dialog.component';
 
 @Component({
   selector: 'app-trader-list',
@@ -53,7 +53,7 @@ export class TraderListComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       if(result) {
         this.addTrader(result);
-      };
+      }
     });
   }
 }

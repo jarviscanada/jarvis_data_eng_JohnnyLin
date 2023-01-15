@@ -1,12 +1,14 @@
 #header {
   display: inline-block;
-  width: 90%;
+  width: 70%;
   font-size: 25px;
   height: 45px;
 }
 
-#close-button {
-  display: inline;
+.close-button-container {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
 }
 
 .new-trader-form {

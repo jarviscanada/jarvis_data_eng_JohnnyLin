@@ -11,7 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatListModule } from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TraderListComponent } from './trader-list/trader-list.component';
 import { NewTraderDialogComponent } from './new-trader-dialog/new-trader-dialog.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { TraderAccountComponent } from './trader-account/trader-account.component';
+import { DepositFundDialogComponent } from './deposit-fund-dialog/deposit-fund-dialog.component';
+import { WithdrawFundDialogComponent } from './withdraw-fund-dialog/withdraw-fund-dialog.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,10 @@ import { QuotesComponent } from './quotes/quotes.component';
     NavbarComponent,
     TraderListComponent,
     NewTraderDialogComponent,
-    QuotesComponent
+    QuotesComponent,
+    TraderAccountComponent,
+    DepositFundDialogComponent,
+    WithdrawFundDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,8 @@ import { QuotesComponent } from './quotes/quotes.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatDividerModule,
-    MatButtonToggleModule
+    MatTabsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
