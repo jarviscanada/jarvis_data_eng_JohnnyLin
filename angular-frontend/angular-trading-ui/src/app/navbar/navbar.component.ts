@@ -7,13 +7,4 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  currentNav: string = "Dashboard";
-
-  setDashboardNav(): void {
-    this.currentNav = 'Dashboard';
-  }
-
-  setQuotesNav(): void {
-    this.currentNav = 'Quotes';
-  }
 }
