@@ -17,7 +17,8 @@
         </mat-form-field>
         <mat-form-field class="trader-field">
             <mat-label>Email</mat-label>
-            <input matInput [(ngModel)]="trader.email" name="email" placeholder="example@domain.com" required>
+            <input matInput type="email" [(ngModel)]="trader.email" name="email" placeholder="example@domain.com" required 
+                pattern="([a-zA-Z0-9]+[\.\-_])*[a-zA-Z0-9]+@([a-zA-Z0-9]+[\.\-_])*[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$">
         </mat-form-field>
         <mat-form-field class="trader-field">
             <mat-label>Country</mat-label>

@@ -15,7 +15,8 @@
         <p>
             <mat-form-field class="edit-form-field">
                 <mat-label>Email</mat-label>
-                <input matInput [(ngModel)]="editModel.email" name="email" required>
+                <input matInput type="email" [(ngModel)]="editModel.email" name="email" required 
+                    pattern="([a-zA-Z0-9]+[\.\-_])*[a-zA-Z0-9]+@([a-zA-Z0-9]+[\.\-_])*[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$">
             </mat-form-field>
         </p>
         <div class="edit-profile-buttons">
