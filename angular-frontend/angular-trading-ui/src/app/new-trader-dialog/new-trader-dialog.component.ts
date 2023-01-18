@@ -24,6 +24,6 @@ export class NewTraderDialogComponent {
   constructor(){ }
 
   formatDob(): void {
-    this.trader.dob = new Date(Date.parse(this.trader.dob)).toLocaleDateString();
+    this.trader.dob = new Date(Date.parse(this.trader.dob)).toISOString();
   }
 }

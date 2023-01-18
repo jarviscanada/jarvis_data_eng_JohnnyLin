@@ -25,29 +25,27 @@ export class TraderListComponent implements OnInit {
     this.getColumns();
   }
 
-  getTraderList() {
+  getTraderList(): void {
     this.traderListService.getDataSource().subscribe(traderList => this.traderList = traderList);
   }
 
-  getColumns() {
+  getColumns(): void {
     this.tableColumns = this.traderListService.getColumns();
   }
 
   addTrader(trader: Trader): void {
-    this.traderListService.addTrader(trader);
-    this.traderTable.renderRows();
+    this.traderListService.addTrader(trader).subscribe(() => this.traderTable.renderRows());
   }
 
   deleteTrader(event: Event, id: number): void {
     try {
-      this.traderListService.deleteTrader(id);
-      this.traderTable.renderRows();
+      this.traderListService.deleteTrader(id).subscribe(() => this.traderTable.renderRows());
     } catch (err) {
       console.log(err);
     }
   }
 
-  openNewTraderDialog() {
+  openNewTraderDialog(): void {
     const dialogRef = this.dialog.open(NewTraderDialogComponent);
     
     dialogRef.afterClosed().subscribe(result => {
