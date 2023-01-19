@@ -1,7 +1,7 @@
 # Angular Trading Frontend Application
 
 ## Introduction
-The Angular Trading application is a frontend web application designed to manage trader accounts and view quotes. Users are able to view a list of trader accounts and are provided with functionalities to add, update and delete trader accounts as well as manage trader funds with options to deposit and withdraw. Users can also view a daily list of quotes. The application data is accessed through RESTful APIs. 
+The Angular Trading application is a front-end web application designed to manage trader accounts and view quotes. Users can view a list of trader accounts and are provided with functionalities to add, update and delete trader accounts as well as manage trader funds with options to deposit and withdraw. Users can also view a daily list of quotes. The application data is accessed through RESTful APIs. 
 
 Technologies used are Angular, Angular Material, npm, Typescript, HTML, CSS and VS Code.
 
@@ -25,7 +25,7 @@ The application was implemented using the Angular framework consisting of compon
 
 ### Architecture
 <p align="center">
-  <img src="./assets/architecture.jpg" height="400">
+  <img src="./assets/architecture.jpg">
 </p>
 
 ## Test
@@ -35,8 +35,6 @@ The application was tested manually. Each feature was tested individually using 
 Source code is managed by GitHub.
 
 ## Improvements
-Write at least three things you want to improve 
-e.g. 
-- Modify server side data models and APIs to be consistent with the frontend
+- Modify server-side data models and APIs to be consistent with the frontend
 - Improve navigation bar features to make it more intuitive
 - Add features to the Quotes page (add, remove, filter, etc.)
