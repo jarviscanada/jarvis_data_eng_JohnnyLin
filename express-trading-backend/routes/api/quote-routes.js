@@ -1,15 +1,24 @@
 const router = require('express').Router();
+const { Quote } = require('../../models');
 
 router.get('/dailyList', (req, res) => {
-    res.status(500).json({ message: "not implemented" });
+    Quote.findAll({
+        order: [['created_at', 'DESC']]
+    })
+    .then(dbQuoteData => res.json(dbQuoteData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    })
 });
 
 router.get('/:quoteId', (req, res) => {
-    res.status(500).json({ message: "not implemented" });
-});
-
-router.delete('/:traderId', (req, res) => {
-    res.status(500).json({ message: "not implemented" });
+    Quote.findByPk(req.params.quoteId)
+    .then(dbQuoteData => res.json(dbQuoteData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    })
 });
 
 module.exports = router;
