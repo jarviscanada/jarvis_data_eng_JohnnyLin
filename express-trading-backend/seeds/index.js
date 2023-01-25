@@ -1,4 +1,5 @@
 const seedQuotes = require('./quotes-seeds');
+const seedTraders = require('./traders-seeds');
 
 const sequelize = require('../config/connection');
 
@@ -8,6 +9,10 @@ const seedAll = async () => {
 
     await seedQuotes();
     console.log('--------------');
+
+    await seedTraders();
+    console.log('--------------');
+
     process.exit(0);
 };
 

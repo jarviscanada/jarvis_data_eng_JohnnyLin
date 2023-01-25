@@ -1,15 +1,33 @@
 const router = require('express').Router();
+const { Trader } = require('../../models');
 
 router.get('/', (req, res) => {
-    res.status(500).json({ message: "not implemented" });
+    Trader.findAll()
+        .then(dbTraderData => res.json(dbTraderData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
 
 router.post('/', (req, res) => {
-    res.status(500).json({ message: "not implemented" });
+    Trader.create(req.body)
+        .then(dbTraderData => res.json(dbTraderData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        })
 });
 
 router.delete('/:traderId', (req, res) => {
-    res.status(500).json({ message: "not implemented" });
+    Trader.destroy({
+        where: { id: req.params.traderId }
+    })
+        .then(dbTraderData => res.json(dbTraderData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        })
 });
 
 module.exports = router;

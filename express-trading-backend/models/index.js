@@ -1,6 +1,7 @@
 // import all models
 const Quote = require('./Quote');
-// TODO: implement Trader and AccountTransaction model
+const Trader = require('./Trader');
+
 // TODO: implement the necessary ORM relationships
 
-module.exports = { Quote };
+module.exports = { Quote, Trader };
