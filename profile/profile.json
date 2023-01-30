@@ -86,28 +86,32 @@
   ],
   "skills": {
     "competent": [
-      "Node.js",
-      "Express.js",
-      "Postgres",
       "Docker",
       "Maven",
-      "C++"
+      "Postman",
+      "C/C++",
+      "Postgres"
     ],
     "familiar": [
       "Cloud/AWS",
-      "Javascript",
-      "HTML/CSS",
       "Bootstrap",
       "JUnit",
       "Python",
       "MongoDB"
     ],
     "proficient": [
-      "Java",
-      "Linux/Bash",
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "Angular",
+      "ORM/Sequelize",
       "RDBMS/SQL",
+      "HTML/CSS",
       "Agile/Scrum",
       "Git",
+      "Java",
+      "Linux/Bash",
       "Data Structures"
     ]
   },

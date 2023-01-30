@@ -4,11 +4,11 @@ I am a recent graduate of the Computer Programming program from Seneca College a
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, Data Structures
+**Proficient:** JavaScript, TypeScript, Node.js, Express.js, Angular, ORM/Sequelize, RDBMS/SQL, HTML/CSS, Agile/Scrum, Git, Java, Linux/Bash, Data Structures
 
-**Competent:** Node.js, Express.js, Postgres, Docker, Maven, C++
+**Competent:** Docker, Maven, Postman, C/C++, Postgres
 
-**Familiar:** Cloud/AWS, Javascript, HTML/CSS, Bootstrap, JUnit, Python, MongoDB
+**Familiar:** Cloud/AWS, Bootstrap, JUnit, Python, MongoDB
 
 ## Jarvis Projects
 

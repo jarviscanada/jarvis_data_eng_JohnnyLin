@@ -12,25 +12,29 @@ summary: I am a recent graduate of the Computer Programming program from Seneca 
 skills:
   # At least 5 skills
   proficient:
-    - Java
-    - Linux/Bash
+    - JavaScript
+    - TypeScript
+    - Node.js
+    - Express.js
+    - Angular
+    - ORM/Sequelize
     - RDBMS/SQL
+    - HTML/CSS
     - Agile/Scrum
     - Git
+    - Java
+    - Linux/Bash
     - Data Structures
   # At least 5 skills
   competent:
-    - Node.js
-    - Express.js
-    - Postgres
     - Docker
     - Maven
-    - C++
+    - Postman
+    - C/C++
+    - Postgres
   # At least 5 skills
   familiar:
     - Cloud/AWS
-    - Javascript
-    - HTML/CSS
     - Bootstrap
     - JUnit
     - Python
